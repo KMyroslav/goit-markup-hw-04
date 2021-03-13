@@ -8,6 +8,7 @@
   --primary-white-bg: #ffffff;
   --secondary-grey-bg: #f5f4fa;
   --accent-dark-blue-bg: #2f303a;
+  --hero-grey-bg: #c4c4c4;
   --primary-grey-text: #757575;
   --secondary-black-text: #212121;
   --title-white: #ffffff;
@@ -111,7 +112,7 @@ body {
 
 /* #################### HEADER #################### */
 .header {
-  padding: 24px 0;
+  /* padding: 24px 0; */
   background-color: var(--primary-white-bg);
   border-bottom: 1px solid var(--header-bottom-border);
 }
@@ -164,12 +165,31 @@ body {
 }
 
 .header-contacts-link {
+  display: flex;
+  align-items: center;
+  flex-shrink: none;
   padding: 32px 0;
 
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--primary-grey-text);
+}
+
+.contacts-icon {
+  display: block;
+  fill: currentColor;
+  margin-right: 10px;
+}
+
+.icon-envelope {
+  width: 16px;
+  height: 12px;
+}
+
+.icon-smartphone {
+  width: 10px;
+  height: 16px;
 }
 /* #################### End Contacts #################### */
 /* #################### END HEADER #################### */
@@ -181,6 +201,19 @@ body {
 
   background-color: var(--accent-dark-blue-bg);
   text-align: center;
+}
+
+.header-bg {
+  margin: 0 auto;
+  max-width: 1600px;
+  background-color: var(--hero-grey-bg);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url('../img/main/bg/hero-bg.jpg');
+  background-position: center;
+  background-size: cover;
 }
 
 .title-hero {
