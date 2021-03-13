@@ -459,6 +459,15 @@ body {
   background-color: var(--accent-dark-blue-bg);
 }
 
+.footer-wrapper {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-join-wrapper {
+  margin-left: 70px;
+}
+
 .footer-address {
   margin-top: 20px;
 }
@@ -478,6 +487,34 @@ body {
   line-height: 1.71;
   color: rgba(255, 255, 255, 0.6);
 }
+
+.join-text {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer-join-wrapper .item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-join-wrapper .social-list-item {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-join-wrapper .social-list-item:hover,
+.footer-join-wrapper .social-list-item:focus {
+  background-color: var(--accent);
+}
+
+.footer-join-wrapper .social-list-icon {
+  fill: #ffffff;
+}
+
 /* #################### END FOOTER #################### */
 
 /* #################### PORTFOLIO #################### */
