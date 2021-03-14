@@ -379,8 +379,8 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 42px;
-  height: 42px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
 }
 
@@ -413,19 +413,12 @@ body {
 
 .client-list {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
-/* .client-list .item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 170px;
-  height: 90px;
-  border: 1px solid var(--icon-primary-grey);
-  border-radius: 4px;
-} */
+.client-list .item.item:not(:last-child) {
+  margin-right: 30px;
+}
 
 .client-link {
   display: flex;
